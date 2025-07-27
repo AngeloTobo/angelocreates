@@ -28,5 +28,50 @@
   <footer>
     © 2025 Angelo Tobo • All rights reserved • Built for the future
   </footer>
+
+<script>
+  // Background based on Dallas time
+  const now = new Date().toLocaleString("en-US", {
+    timeZone: "America/Chicago",
+    hour12: false,
+    hour: "2-digit"
+  });
+  const hour = parseInt(now);
+  let bg = "black";
+  if (hour >= 6 && hour < 12) bg = "linear-gradient(to right, #001F3F, #0074D9)";
+  else if (hour >= 12 && hour < 18) bg = "linear-gradient(to right, #2E8B57, #3CB371)";
+  else if (hour >= 18 && hour < 21) bg = "linear-gradient(to right, #FFA500, #FF4500)";
+  else bg = "linear-gradient(to right, #0f2027, #203a43, #2c5364)";
+  document.body.style.background = bg;
+
+  // Fade in on load
+  document.body.style.opacity = 0;
+  window.addEventListener('load', () => {
+    document.body.style.transition = 'opacity 1s ease-in-out';
+    document.body.style.opacity = 1;
+  });
+
+  // Glitter trail effect
+  const sparkle = () => {
+    const dot = document.createElement("div");
+    dot.style.position = "fixed";
+    dot.style.width = "4px";
+    dot.style.height = "4px";
+    dot.style.borderRadius = "50%";
+    dot.style.background = "rgba(255, 255, 255, 0.3)";
+    dot.style.pointerEvents = "none";
+    dot.style.zIndex = "1000";
+    document.body.appendChild(dot);
+    return dot;
+  };
+
+  document.addEventListener("mousemove", (e) => {
+    const s = sparkle();
+    s.style.left = e.clientX + "px";
+    s.style.top = e.clientY + "px";
+    setTimeout(() => s.remove(), 300);
+  });
+</script>
+
 </body>
 </html>
