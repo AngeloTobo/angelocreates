@@ -1,0 +1,65 @@
+
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background: url('https://i.imgur.com/vRW9R04.png') repeat;
+  color: #ffffff;
+}
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 10px #00ffff55;
+}
+.sidebar {
+  width: 250px;
+  background-color: #111;
+  padding: 1rem;
+  border-right: 2px solid #00ffff33;
+}
+.sidebar .profile-pic {
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid #00ffff99;
+}
+.sidebar h2 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: #00ffff;
+}
+.sidebar p {
+  margin: 0.5rem 0;
+}
+.sidebar nav a {
+  display: block;
+  color: #0ff;
+  text-decoration: none;
+  margin: 0.25rem 0;
+}
+.sidebar nav a:hover {
+  background: #00ffff33;
+}
+.main-content {
+  flex-grow: 1;
+  padding: 1rem 2rem;
+}
+.top-bar {
+  border-bottom: 1px dashed #00ffff88;
+  margin-bottom: 1rem;
+}
+.about, .portfolio, .music {
+  margin-bottom: 2rem;
+}
+.friend-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.friend-grid img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 2px solid #00ffff55;
+  border-radius: 5px;
+}

@@ -1,36 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Index – Angelo Creates</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Angelo's Space – MySpace Vibes</title>
+  <link rel="stylesheet" href="css/myspace.css">
 </head>
 <body>
-  <header>
-    <h1>ANGELO CREATES</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="viewer.html">3D Viewer</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <main>
-<section class="hero">
-  <h2>Welcome to My World</h2>
-  <p>Step into the surreal and explore my digital universe of 3D art, AR experiences, and design storytelling.</p>
-  <a class="btn" href="portfolio.html">Enter the Gallery</a>
-</section>
-<section class="features">
-  <div><h3>🛸 3D Art</h3><p>Stylized, alien, futuristic – all sculpted by hand.</p></div>
-  <div><h3>🔮 AR Filters</h3><p>Face filters & virtual makeup used by thousands.</p></div>
-  <div><h3>🎨 Design</h3><p>Marketing assets and brand visuals from real-world work.</p></div>
-</section>
-</main>
-  <footer>© 2025 Angelo Tobo • All rights reserved • Built for the future</footer>
-  <script src="js/site.js"></script>
+  <div class="container">
+    <div class="sidebar">
+      <img src="assets/profile.jpg" alt="Angelo Profile" class="profile-pic">
+      <h2>Angelo Tobo</h2>
+      <p><strong>Status:</strong> Feeling alien 🛸</p>
+      <p><strong>Location:</strong> Plano, TX</p>
+      <p><strong>Online Now</strong> 💚</p>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Photos</a>
+        <a href="#">Friends</a>
+        <a href="#">Music</a>
+        <a href="#">Message</a>
+      </nav>
+    </div>
+
+    <div class="main-content">
+      <div class="top-bar">
+        <h1>Welcome to Angelo's Space</h1>
+        <p>This is where the digital art, weird vibes, and surreal self-expression collide.</p>
+      </div>
+
+      <div class="about">
+        <h3>About Me</h3>
+        <p>I'm Angelo – 3D artist, digital dreamer, and creative ops wizard. I build surreal characters, AR filters, and immersive experiences. Inspired by Final Fantasy aesthetics and alien couture.</p>
+      </div>
+
+      <div class="portfolio">
+        <h3>Top Friends (a.k.a. Projects)</h3>
+        <div class="friend-grid">
+          <img src="assets/art1.jpg" alt="Project 1">
+          <img src="assets/art2.jpg" alt="Project 2">
+          <img src="assets/art3.jpg" alt="Project 3">
+          <img src="assets/art4.jpg" alt="Project 4">
+        </div>
+        <p>Swap these images in <code>/assets/</code> with your own.</p>
+      </div>
+
+      <div class="music">
+        <h3>Music Player 🎵</h3>
+        <audio controls>
+          <source src="assets/sample.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+  </div>
+  <script src="js/glitter.js"></script>
 </body>
 </html>
